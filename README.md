@@ -3,29 +3,31 @@ For this project, you will build a personal portfolio site, a static website whe
 
 
 ## Objectives TO DO:
-- Build a website using HTML, CSS
-- Add at least one interactive feature using JavaScript
 
-## Objectives COMPLETED
+## Objectives COMPLETED:
 - Use Git version control
 - Use the command line and file navigation
 - Develop locally on your computer
 - Deploy your site to the web using GitHub Pages
+- Build a website using HTML, CSS
+- Add at least one interactive feature using JavaScript
 
+
+## Plan:
+All planned items will move down to to DONE section below.
 
 ## Done:
 - Setup a new repo
 - Check in readme file and base index.html
 - Setup Github pages to see the index.html work
 - Make a home page (index.html)
-
-
-
-## Plan:
-- Make a contact page (contact.html) with a form
-- Make the home page interactive by adding a drop down menu
 - Style with CSS
 - Make responsive with CSS
+- Make a contact page (contact.html) with a form
+- Make the contact page interactive by replacing the form with a meme.
+
+
+
 
 
 

@@ -1,4 +1,6 @@
+/*********************************/
 /* General Body Styles */
+/*********************************/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -20,8 +22,7 @@ html {
 }
 
 
-
-/* Wrapper for your page content */
+/* Wrapper for the page content */
 .body-wrapper {
     display: flex;
     flex-direction: column;
@@ -32,48 +33,18 @@ html {
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-/* Navigation Menu */
-/* nav ul {
-    padding: 0;
-    list-style: none;
-    background: #444;
-    text-align: left;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
     padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background: #555;
-}
-
-nav a {
-    float: left;
-    display: block;
-    color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-*/
 
-/* Change the color of links on hover */
-/* nav a:hover {
-    background-color: #ddd;
-    color: black;
-} */
+/* Style for the header title */
+.header-title {
+    font-size: 1.5rem; /* Larger font size for title */
+}
+
 
 /* Dropdown container - hidden by default */
 .dropdown-content {
@@ -151,7 +122,9 @@ nav a {
     display: block;
 }
 
+/*********************************/
 /* Main Content Area */
+/*********************************/
 .container {
     max-width: 1170px; /* or any max-width you prefer */
     width: 100%;
@@ -169,7 +142,9 @@ nav a {
     box-sizing: border-box;
 }
 
+/*********************************/
 /* Contact Page Specific Styles */
+/*********************************/
 .contact-form {
     background: #fff;
     padding: 2rem;
@@ -202,7 +177,15 @@ nav a {
     background: #444;
 }
 
+#jk {
+    display: none;
+    position: relative;
+}
+
+/*********************************/
 /* Footer */
+/*********************************/
+
 footer {
     background: #333;
     color: white;
@@ -213,17 +196,45 @@ footer {
     width: 100%;
 }
 
+/*********************************/
 /* Responsive design  */
+/*********************************/
+
 /* For tablets and larger phones */
 @media (max-width: 768px) {
-    nav ul li {
+    /* nav ul li {
         display: block;
-    }
+    } */
 
     .contact-form input[type='text'],
     .contact-form input[type='email'],
     .contact-form input[type='submit'] {
         width: 100%;
+    }
+
+    .dropdown-toggle {
+        /* font-size: 0; /* Hide the text */
+        visibility: hidden;
+        position: relative;
+    }
+
+
+    .dropdown-toggle::after {
+        content: '\25BC'; /* Unicode for downward arrow */
+        visibility: visible; /* Makes the arrow visible */
+        position: absolute; /* Positions the arrow where the text used to be */
+        left: 0; /* Align to the left */
+        top: 0; /* Align to the top */
+
+        background-color: #03adfc; /* Light blue background */
+        color: white; /* White text */
+        padding: 8px; /* Spacing around text */
+        border: none; /* No border */
+        cursor: pointer; /* Cursor changes to pointer on hover */
+        font-size: 16px; /* Font size */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline on text */
+    
     }
 }
 
@@ -239,5 +250,29 @@ footer {
 
     .contact-form {
         padding: 1rem;
+    }
+
+    .dropdown-toggle {
+        /* font-size: 0; /* Hide the text */
+        visibility: hidden;
+        position: relative;
+    }
+
+
+    .dropdown-toggle::after {
+        content: '\25BC'; /* Unicode for downward arrow */
+        visibility: visible; /* Makes the arrow visible */
+        position: absolute; /* Positions the arrow where the text used to be */
+        left: 0; /* Align to the left */
+        top: 0; /* Align to the top */
+
+        background-color: #03adfc; /* Light blue background */
+        color: white; /* White text */
+        padding: 8px; /* Spacing around text */
+        border: none; /* No border */
+        cursor: pointer; /* Cursor changes to pointer on hover */
+        font-size: 16px; /* Font size */
+        border-radius: 4px; /* Rounded corners */
+        text-decoration: none; /* No underline on text */
     }
 }

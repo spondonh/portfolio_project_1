@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Project 1</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="./style.css">
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
-</head>
-<div class="body-wrapper">
+  </head>
+  <div class="body-wrapper">
     <body>
         <header>
             <div class="header-title">End of unit project: Building Interactive Websites</div>
@@ -26,11 +26,28 @@
             </nav>
         </header>
         <main class="container">
-            <h1 class="home-banner">Why does this site exist?</h1>
-            <p>This page was made as part of the first portoflio project
-                when completing the Full Stack Developer curriculum</p>
-            <p>More details about the course can be found here: </p>
-            <p><a href="https://www.codecademy.com/career-journey/full-stack-engineer">Codecademy</a></p>
+            <h1 class="home-banner">Want to get in touch?</h1>
+            <p>Fill out the form below.</p>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required="true"
+                    minlength="3" maxlength="25"><br>
+                <label for="email">Your email addy:</label>
+                <input type="email" id="email" name="email" required="true"
+                    minlength="3"><br>
+                <label for="msg">What can I help you with?</label>
+                <input type="text" id="msg" name="msg" placeholder="What's on your mind?" required="true"><br>
+                
+
+                <input type="submit" value="Hit me up!">
+            </form>
+            <div id="jk">
+                <img src="./hahaha.jpg" style="height:200px;">
+                <p>Just kidding!  I haven't completed the Back End Developer
+                    module just yet.  Hit me up on LinkedIn in the footer link
+                    below if you'd like to get in touch!
+                </p>
+            </div>
         </main>
         <footer>
             <a href="https://wwww.codecademy.com/"><img 
@@ -46,7 +63,6 @@
 
 
         <script src="index.js"></script>
-    </body>
-</div>
-
+      </body>            
+  </div>
 </html>

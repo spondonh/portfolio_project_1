@@ -39,7 +39,6 @@ A very rough layout of what I think the home page could look like.
     - Go To: 
 - Body:
     - Why does this page exist?
-        - 
 - Footer:
     - Link to codecademy
     - Link to LinkedIn

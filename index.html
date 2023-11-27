@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Project 1</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
-    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>This page was made as part of the first portoflio project when completing the Full Stack Developer curriculum</p>
-        <p>More details about the course can be found here: https://www.codecademy.com/career-journey/full-stack-engineer</p>
-    </main>
-	<script src="index.js"></script>
-  </body>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<div class="body-wrapper">
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Go to</a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h1 class="home-banner">Why does this site exist?</h1>
+            <p>This page was made as part of the first portoflio project
+                when completing the Full Stack Developer curriculum</p>
+            <p>More details about the course can be found here: </p>
+            <p><a href="https://www.codecademy.com/career-journey/full-stack-engineer">Codecademy</a></p>
+        </main>
+        <footer>
+            This is the footer
+        </footer>
+
+
+        <script src="index.js"></script>
+    </body>
+</div>
+
 </html>
